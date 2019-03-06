@@ -10,7 +10,7 @@
             <input v-model="newCar.price" type="number" name="price" placeholder="Price" required>
             <input v-model="newCar.imgUrl" type="url" name="imgUrl" placeholder="Image" required>
             <button type="submit">Submit</button>
-        </form>`
+        </form>
     </div>
 </template>
 
