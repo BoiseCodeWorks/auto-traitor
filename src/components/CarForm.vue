@@ -1,7 +1,8 @@
 <template>
     <div class="car-form col">
-        <button class="btn" @click="showform = !showform"
-            :class="{'btn-danger': showform, 'btn-primary': !showform}">{{showform ? 'Cancel': 'Make Car'}}</button>
+        <button class="btn" @click="showform = !showform" :class="{'btn-danger': showform, 'btn-primary': !showform}">
+            {{showform ? 'Cancel': 'Make Car'}}
+        </button>
         <form v-if="showform" @submit.prevent="makeCar">
             <input v-model="newCar.make" type="text" name="make" placeholder="Make" required>
             <input v-model="newCar.model" type="text" name="model" placeholder="Model" required>
